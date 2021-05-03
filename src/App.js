@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Products from './Products';
 import Wishlist from './Wishlist';
+
+
 class App extends Component {
   constructor() {
     super();
@@ -17,10 +19,11 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.products)
     return (
       <div>
         <Wishlist />
-        <Products />
+        <Products list={this.state.products} />
       </div>
     )
   }

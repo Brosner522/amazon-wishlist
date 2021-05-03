@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
-class Wishlist extends Component {
-  constructor() {
-    super();
-  }
 
+class Wishlist extends Component {
+  constructor(props) {
+    super();
+    
+  }
   render() {
     return (
       <div className="wishlist">
         <h1>Wishlist (Items added go down below)</h1>
+        
       </div>
     )
   }
